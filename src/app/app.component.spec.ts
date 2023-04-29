@@ -1,12 +1,26 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {HeaderComponent} from "./header/header.component";
+import {FooterComponent} from "./footer/footer.component";
+import {CommonModule} from "@angular/common";
+import {BrowserModule} from "@angular/platform-browser";
+import {HttpClientModule} from "@angular/common/http";
+import {AppRoutingModule} from "./app-routing.module";
+import {VehiculosModule} from "./vehiculos/vehiculos.module";
+import {VehiculosService} from "./vehiculos/service/vehiculos.service";
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
       ],
+      imports: [
+        AppRoutingModule,
+      ],
+      providers: [VehiculosService],
     }).compileComponents();
   });
 
@@ -22,10 +36,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('autos-app');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('autos-app app is running!');
-  });
 });

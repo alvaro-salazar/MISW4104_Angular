@@ -18,3 +18,7 @@
   </ng-container>
   </tbody>
 </table>
+<div class="my-total" *ngFor="let marca of arregloVehiculos">
+  Total {{ marca }}: {{ sumaVehiculosPorMarca[marca] }}
+</div>
+

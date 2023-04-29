@@ -13,4 +13,4 @@ import {HttpClientModule} from "@angular/common/http";
     HttpClientModule
   ]
 })
-export class AutosModule { }
+export class VehiculosModule { }

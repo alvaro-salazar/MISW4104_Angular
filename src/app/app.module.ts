@@ -6,7 +6,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import {HttpClientModule} from "@angular/common/http";
 import {CommonModule} from "@angular/common";
-import {AutosModule} from "./autos/autos.module";
+import {VehiculosModule} from "./vehiculos/vehiculos.module";
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import {AutosModule} from "./autos/autos.module";
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    AutosModule
+    VehiculosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,6 @@
+.cabecera-centrada {
+  display: flex;
+  margin-left: 15vw; /* el margen izquierdo será del 15% del viewport */
+}
+
+

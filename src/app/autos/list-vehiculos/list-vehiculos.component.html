@@ -1,0 +1,20 @@
+<table class="table w-100 my" style="max-width: 800px;">
+  <thead class="table-dark">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Marca</th>
+    <th scope="col">Linea</th>
+    <th scope="col">Modelo</th>
+  </tr>
+  </thead>
+  <tbody>
+  <ng-container *ngFor="let vehiculo of vehiculos">
+    <tr>
+      <th scope="row">{{vehiculo.id}}</th>
+      <td>{{vehiculo.marca}}</td>
+      <td>{{vehiculo.linea}}</td>
+      <td>{{vehiculo.modelo}}</td>
+    </tr>
+  </ng-container>
+  </tbody>
+</table>
